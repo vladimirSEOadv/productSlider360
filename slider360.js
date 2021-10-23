@@ -193,8 +193,8 @@
 				} else {
 					range.value--					
 				}
-        renderChangeSlide360();
-        //setTimeout(renderChangeSlide360(), 1000)
+        //renderChangeSlide360();
+        setTimeout(renderChangeSlide360(), 2000)
 			}      
 		});
 
