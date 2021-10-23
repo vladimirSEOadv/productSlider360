@@ -193,8 +193,8 @@
 				} else {
 					range.value--					
 				}
-        //renderChangeSlide360();
-        setTimeout(renderChangeSlide360(), 2000)
+        renderChangeSlide360();
+        //setTimeout(renderChangeSlide360(), 2000)
 			}      
 		});
 
@@ -212,7 +212,7 @@
 		function renderChangeSlide360() {
 				debugCounter.textContent = range.value + " слайд"
 				while (range.value != cutentImage) {
-					sliderLogic()
+					setTimeout(sliderLogic(), 2000)
 				}			
 		}
     
@@ -223,5 +223,5 @@
  			      } else if (range.value < cutentImage) {		
  			        cutentImage--
  			      }  
-      img.src = arrImg[cutentImage];
+      		img.src = arrImg[cutentImage];
 		}
